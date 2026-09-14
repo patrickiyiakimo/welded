@@ -19,7 +19,7 @@ body {
 }
 
 canvas {
-  border-radius: 18px;
+  border-radius: 8px;
   box-shadow:
     0 0 0 1px rgba(255,255,255,0.06),
     0 30px 60px rgba(0,0,0,0.7),
@@ -37,10 +37,8 @@ canvas {
   color: #101214;
   background: linear-gradient(180deg, #ffd166, #f4a300);
   border: none;
-  border-radius: 10px;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
-  box-shadow: 0 6px 20px rgba(244, 163, 0, 0.35);
 }
 
 #weldBtn:hover { transform: translateY(-2px); }
@@ -49,11 +47,4 @@ canvas {
   opacity: 0.5;
   cursor: not-allowed;
   box-shadow: none;
-}
-
-.caption {
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  opacity: 0.55;
 }

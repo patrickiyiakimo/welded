@@ -316,4 +316,4 @@ plateImage.onload = () => {
   paintBasePlate();
   requestAnimationFrame(render);
 };
-plateImage.src = 'metal.jpg';
+plateImage.src = 'metal.png';
