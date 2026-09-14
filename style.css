@@ -1,0 +1,59 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 30%, #1c1f26, #0a0b0d 70%);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #cfd3da;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  padding: 30px;
+}
+
+canvas {
+  border-radius: 18px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.06),
+    0 30px 60px rgba(0,0,0,0.7),
+    inset 0 0 40px rgba(0,0,0,0.6);
+  background: #2a2d33;
+  cursor: none;
+  touch-action: none;
+}
+
+#weldBtn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #101214;
+  background: linear-gradient(180deg, #ffd166, #f4a300);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 6px 20px rgba(244, 163, 0, 0.35);
+}
+
+#weldBtn:hover { transform: translateY(-2px); }
+#weldBtn:active { transform: translateY(0); }
+#weldBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.caption {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
